@@ -1,0 +1,26 @@
+$brand-primary: #0199ba;
+$brand-secondary: #000000;
+$background: #ffffff;
+$font-family: 'Libre Franklin', Helvetica, sans-serif;
+$font-heading: 'Libre Franklin', Helvetica, sans-serif;
+$font-colour: #333333;
+$font-body-size: 1rem;
+$font-h1: 1.8rem;
+$font-h2: 1.5rem;
+$font-h3: 1.2rem;
+$font-h4: 1.1rem;
+$font-h5: 1rem;
+$font-h6: 0.9rem;
+
+//mobile
+$screen-xs: 30rem; //480px
+$screen-sm: 48rem; //768px
+//$screen-sm-1: $screen-sm - (1rem / 32rem);
+
+//screen small
+$screen-md: 62rem; //992px
+
+//large screen
+$screen-lg: 70.3125rem; //1125px
+
+$gutter-width: 2rem;
