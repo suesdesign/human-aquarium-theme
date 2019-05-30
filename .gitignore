@@ -4,3 +4,4 @@ tmp
 .sass-cache
 .DS_Store
 assets/img/logo.jpg
+package-lock.json
