@@ -21,6 +21,7 @@
     </div><!--.entry-->
     <?php comments_template( '', true ); ?>
     <footer>
+      <?php get_sidebar('blog-post-footer'); ?>
       <p class="postmetadata">
         <?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?><br>
         <?php the_tags('Tags: ', ', ', '<br />'); ?>

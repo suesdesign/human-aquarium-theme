@@ -23,7 +23,7 @@
 <div class="outer-wrapper">
 <a href="#maincontent" class="tab_accessibility">Skip to main content</a>
 	<header id="banner" class="container" role="banner">
-		<a href="<?php bloginfo( 'url' ); ?>" ><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/logo.gif" alt="logo" class="banner-logo" /></a>
+		<a href="<?php bloginfo( 'url' ); ?>" ><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/logo.jpg" alt="logo" class="banner-logo" /></a>
 				<!-- add menu button -->
 
 		<div class="mobile-nav">

@@ -5,6 +5,10 @@ grunt.initConfig({
 	pkg: grunt.file.readJSON('package.json'),
 	sass: {
 	dist: {
+		options: {
+			//style: 'expanded'
+			style: 'compressed'
+			},
 		files: {			
 				'assets/css/styles.css' : 'assets/sass/styles.scss'	
 				}

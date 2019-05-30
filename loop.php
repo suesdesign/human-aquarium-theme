@@ -50,11 +50,6 @@
 				<time class="date"><?php the_time('F jS, Y') ?></time>
 			</header>
 			<div class="entry">
-				<?php
-					if ( has_post_thumbnail() ) {
-					the_post_thumbnail('medium');
-					}
-				?>
 				<?php the_content() ?>
 			</div><!--.entry-->
 			<footer>

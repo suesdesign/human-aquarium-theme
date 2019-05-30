@@ -22,7 +22,7 @@ add_action( 'wp_enqueue_scripts',  'humanaquarium_theme_js' );
 /*load Google fonts*/
 
 function load_fonts() {
-	wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Libre+Franklin');
+	wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Roboto');
 	wp_enqueue_style( 'googleFonts');
 }
 
@@ -54,6 +54,16 @@ function humanaquarium_widgets_init() {
 		'before_title'  => '<h3>',
 		'after_title'   => '</h3>'
 	) );
+
+	register_sidebar(array(
+		'name'          => __( 'Blog Post Footer', 'humanaquarium' ),
+		'id'            => 'blog-post-footer',
+		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+		'after_widget'  => '</div></section>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>'
+	) );
+
 }
 
 add_action( 'widgets_init', 'humanaquarium_widgets_init' );

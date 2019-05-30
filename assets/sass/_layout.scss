@@ -46,9 +46,14 @@ article footer{
 #footer {
 	clear: both;
 	padding: 1rem 0.3rem 0 0.3rem;
+	margin-top: 1rem;
+	@extend %clearfix;
+	display: block;
 }
 
-/* Gutenberg columns for mobile*/
+/**
+* Gutenberg columns for mobile
+**/
 @media all and (max-width: $screen-sm + 1rem) {
 	.wp-block-columns {
     display: block;
@@ -87,7 +92,7 @@ article footer{
 		padding: 0;
 	}
 
-	#maincontent, #blog {
+	#blog {
 		padding: 2rem 0 0 0;
 	}
 
@@ -124,6 +129,7 @@ article footer{
 		img.banner-logo {
 			height: auto;
 			padding-left: 0;
+			width: 136px;
 		}
 	}
 
@@ -144,12 +150,12 @@ article footer{
 				float: left;
 
 				a {
-					padding: 0.5rem 2rem;
+					padding: 0.5rem 1.8rem;
 					background: $background;
 					color: $brand-secondary;
 					text-decoration: none;
 					font-weight: bold;
-					font-size: 0.9rem;
+					font-size: 1rem;
 					float: left;
 					&:hover, &:focus {
 					color: lighten($brand-secondary, 40%);
@@ -176,8 +182,9 @@ article footer{
 
 	}
 
-		#footer {
+	#footer {
 		padding: 1rem 0 0 0;
+		margin-top: 2rem;
 	}
 
 	/* Make footer stick to bottom of page on short pages */
@@ -194,6 +201,10 @@ article footer{
 		flex-direction: column;
  		display: flex;
  		min-height: 100vh;
+	}
+
+	#main_sidebar {
+		padding: 1.5rem 0 2rem 0;
 	}
 
 	.two-columns {
@@ -222,6 +233,9 @@ article footer{
 	}
 	.home aside .entry img {
 		max-width: 200px;
+	}
+	#main-nav ul li a {
+		font-size: 0.9rem;
 	}
 }
 

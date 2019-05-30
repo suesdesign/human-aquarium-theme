@@ -66,11 +66,19 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#maincontent .entry p a {
+#maincontent .entry p a, .blog-post-footer p a {
+	font-weight: bold;
 	color: $brand-secondary;
 	&:hover, &:focus {
 		color: $brand-secondary;
 		box-shadow: inset 0 -3px 0 $brand-secondary;
+	}
+}
+
+a.tag-cloud-link {
+	text-decoration: none;
+		&:hover, &:focus {
+		text-decoration: underline;
 	}
 }
 
@@ -167,7 +175,6 @@ figure {
 			text-decoration: underline;
 		}
 	}
-
 }
 
 .widget_search {
@@ -230,10 +237,14 @@ figure {
 	}
 }
 
-
 /**
 ** images
 **/
+
+.banner-logo {
+	width: 80px;
+	height: auto;
+}
 
 img, figure {
 	max-width: 100%;
@@ -272,7 +283,9 @@ img.alignleft, img.alignright, .wp-post-image {
 	clear: both;
 }
 
-/* searchforms */
+/**
+* Searchforms
+**/ 
 
 .submit, .search-submit {
 	background-color: $brand-secondary;
@@ -300,7 +313,7 @@ input[type="search"]{
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	display: block;
-	padding: 0.5em 0 0.5em 0.1em;
+	padding: 0.65em 0 0.5em 0.1em;
 	width: 99%;
 	&:focus {
 		box-shadow: 0 0 3px #000;
@@ -317,16 +330,56 @@ input[type="search"]{
 }
 
 .search-form .search-submit {
-	padding: 0.5em 1em;
+	padding: 0.5rem;
 	position: relative;
-	top: -2.3em;
-
+	top: -2.35em;
 }
 
 iframe {
 	max-width: 98%;
 }
 
+/**
+** Front page sections
+**/
+
+.homepage-section {
+	text-align: center;
+}
+
+.big-text {
+	font-size: 1.5rem;
+}
+
+/**
+** Activities
+**/
+
+.ha_activities {
+	padding: 2rem 0;
+	border-bottom: 1px lighten($brand-secondary, 80%) solid;
+	@extend %clearfix;
+}
+
+/**
+** Footer logos
+**/
+
+.footer-logos-row {
+	margin: 0 0 1rem 0;
+	@extend %clearfix;
+	.footer-logos {
+		float: left;
+		margin: 0 2rem 0 0;
+	}
+	.wp-block-image {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100px !important; /*height of tallest image*/
+		padding: 0;
+		margin: 0;
+	}
+}
 
 /**
 ** footer
@@ -334,8 +387,6 @@ iframe {
 
 #footer {
 	background: $background;
-	margin-top: 20px;
-	padding: 20px 0;
 	border-top: 1px lighten($brand-secondary, 80%) solid;
 	p {
 		color: $brand-secondary;
